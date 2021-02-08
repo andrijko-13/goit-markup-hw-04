@@ -88,7 +88,16 @@ ol {
   color: var(--secondary-color);
 }
 
+.header-address-mail::before {
+  content: "";
+}
 
+.svg-mail {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
 /* ============== COMPONENTS ==============*/
 .logo-web,
 .logo-studio {
@@ -186,6 +195,9 @@ header a {
 /* ============== HERO ==============*/
 .hero {
   background-color: #2F303A;
+  background-image: linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -221,7 +233,10 @@ header a {
   width: 200px;
   border-radius: 4px;
 }
-
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188CE8;
+}
 /* ============== FEATURE-LIST ==============*/
 .feautures-list {
   padding-top: 94px;
