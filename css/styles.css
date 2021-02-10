@@ -1,15 +1,9 @@
-/*
-color: var(--accent-color) ----- accent
-color: var(--primary-color) ----- primary
-color: var(--secondary-color) ----- secondary
-color: #2196f3; ----- active
-*/
-
 :root {
   --accent-color: #212121;
   --primary-color: #757575;
   --secondary-color: #ffffff;
   --active-color: #2196f3;
+  --logos-color: #afb1b8;
 
   --primary-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
@@ -179,7 +173,7 @@ header a {
 }
 
 .svg-mail {
-  content: "";
+  content: '';
   display: block;
   width: 16px;
   height: 12px;
@@ -188,7 +182,7 @@ header a {
 }
 
 .svg-tel {
-  content: "";
+  content: '';
   display: block;
   width: 10px;
   height: 16px;
@@ -308,7 +302,6 @@ header a {
   height: 70px;
 }
 
-.
 /* ============== END FEATURE-LIST ==============*/
 
 /* ============== WHAT WE DO ==============*/
@@ -424,7 +417,7 @@ header a {
 .social-links svg {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: var(--logos-color);
 }
 
 .social-links:hover,
@@ -445,6 +438,51 @@ header a {
   border-radius: 50%;
 }
 /* ============== END OUR TEAM ==== ==========*/
+
+/* ============== CLIENTS ==== ==========*/
+
+.clients {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.clients-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.clients-logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-div {
+  content: '';
+  background-color: transparent;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--logos-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-svg {
+  fill: var(--logos-color);
+}
+
+.clients-svg:hover,
+.clients-svg:focus {
+  fill: var(--active-color);
+}
+
+.clients-div:hover,
+.clients-div:focus {
+  border: 1px solid var(--active-color);
+}
+/* ============== END CLIENTS ==== ==========*/
 
 /* ============== FOOTER ==============*/
 .footer {
@@ -653,7 +691,7 @@ main .portfolio {
 
 .grid-item:hover,
 .grid-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* ============== END PORFOLIO GRID ==============*/
