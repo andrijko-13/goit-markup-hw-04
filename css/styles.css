@@ -76,12 +76,6 @@ ol {
   color: var(--active-color);
 }
 
-.svg-mail {
-  width: 16px;
-  height: 12px;
-  fill: currentColor;
-  margin-right: 10px;
-}
 /* ============== COMPONENTS ==============*/
 .logo-web,
 .logo-studio {
@@ -422,8 +416,12 @@ header a {
 
 .social-links:hover,
 .social-links:focus {
-  fill: var(--secondary-color);
   background-color: var(--active-color);
+}
+
+.social-links:hover svg,
+.social-links:focus svg {
+  fill: var(--secondary-color);
 }
 
 .team-socials li a {
@@ -447,9 +445,14 @@ header a {
 }
 
 .clients-title {
-  display: flex;
-  justify-content: center;
   margin-bottom: 50px;
+  color: var(--accent-color);
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 
 .clients-logos {
