@@ -100,7 +100,7 @@ ol {
 
 /* ============== HEADER ==============*/
 .header {
-  display: flex;
+  display: block;
   height: 80px;
   align-items: baseline;
   border-bottom: 1px solid #ececec;
